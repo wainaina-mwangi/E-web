@@ -28,8 +28,39 @@ body {
   flex-direction: column;
 }
 
+/*  */
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-icon {
+  display: none; /* Hidden on desktop */
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: 0.3s;
+}
+
+/*  */
+
 .navbar {
-  /* Modern translucent feel */
+
   background-color: var(--bg-glass);
   backdrop-filter: blur(10px); 
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -505,7 +536,7 @@ body {
 }
 
 .btn-primary {
-  background-color: #007bff;
+  background-color: rgb(155, 197, 4);
   color: #fff;
 }
 
@@ -534,6 +565,28 @@ body {
 
 .btn-block {
   width: 100%;
+}
+
+
+.footer{
+  background-color: #2d3436;
+  padding: 10px 20px;
+  color: #ddd;
+ 
+}
+
+.footer-brand{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.footer-links{
+  list-style: none;
+  font-weight: 200;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 768px) {
@@ -574,4 +627,61 @@ body {
   .checkout-item-controls {
     align-items: flex-start;
   }
+
+  .footer-content{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.btn-large {
+  padding: 04rem 1rem;
+  font-size: 1rem;
+}
+
+.btn-small {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+
+.menu-icon {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 70px; 
+    left: -100%;
+    flex-direction: column;
+    background: #f08102;
+    width: 100%;
+    text-align: center;
+    transition: 0.4s;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    padding: 2rem 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .navbar-links, .navbar-auth-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
 }
