@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
 
 function Auth() {
   return (
-    <div>Auth</div>
-  )
+    <div className="page">
+      <div className="container">
+        <div className="auth-container">
+          <h1 className="page-title"></h1>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Auth
+export default Auth;

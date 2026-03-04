@@ -69,6 +69,19 @@ const products = [
     "price": 79.00,
     "image": "https://images.unsplash.com/photo-1608156639585-b3a032ef9689?auto=format&fit=crop&q=80&w=800",
     "description": "360-degree sound with deep bass. IPX7 waterproof rating makes it perfect for pool parties or rugged camping."
+  },
+  {
+    "id": 11,
+    "name": "Coffee",
+    "price": 7.00,
+    "image": "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29mZmVlfGVufDB8fDB8fHww",
+    "description": "360-degree sound with deep bass. IPX7 waterproof rating makes it perfect for pool parties or rugged camping."
+  },{
+    "id": 12,
+    "name": "portable Flower Vase",
+    "price": 109.00,
+    "image": "https://images.unsplash.com/photo-1647156776850-0923ec49bc90?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGZsb3dlcnMlMjB2YXNlfGVufDB8fDB8fHww",
+    "description": "360-degree sound with deep bass. IPX7 waterproof rating makes it perfect for pool parties or rugged camping."
   }
 ]
 
