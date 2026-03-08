@@ -327,6 +327,9 @@ body {
 
 .form-error {
   display: block;
+  background-color: #caa4a7;
+  border-radius: 10px;
+  padding: 5px 7px;
   color: #dc3545;
   font-size: 0.875rem;
   margin-top: 0.25rem;
