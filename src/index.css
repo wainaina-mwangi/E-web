@@ -62,13 +62,14 @@ body {
 .navbar {
 
   background-color: var(--bg-glass);
-  backdrop-filter: blur(10px); 
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(15px); 
+  border-bottom: 2px solid #00000044;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   padding: 0.8rem 0;
   position: sticky;
   top: 0;
   z-index: 1000;
+  
 }
 
 .navbar-container {
@@ -78,6 +79,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .navbar-brand {
@@ -591,6 +593,17 @@ body {
 .footer-content{
   display: flex;
   justify-content: space-between;
+}
+
+@keyframes anime{
+  from{
+    opacity: 0;
+    transform: translate(-50%,40px);
+  }
+  to{
+    opacity: 1;
+    transform: translate(-50%,0);
+  }
 }
 
 @media (max-width: 768px) {

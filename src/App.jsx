@@ -4,10 +4,14 @@ import Footer from './Components/Footer'
 import Home from "./pages/Home";
 import Auth from "./pages/Auth";
 import Checkout from "./pages/Checkout";
+import AuthProvider from "./Context/AuthContext";
+
+
 
 function App() {
   return (
     <div className="app">
+      <AuthProvider>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -15,7 +19,7 @@ function App() {
         <Route path="/checkout" element={<Checkout />} />
       </Routes>
       <Footer/>
-    
+    </AuthProvider>
     </div>
   );
 }
