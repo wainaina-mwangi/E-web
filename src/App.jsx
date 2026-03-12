@@ -6,6 +6,7 @@ import Auth from "./pages/Auth";
 import Checkout from "./pages/Checkout";
 import ProductDetails from "./pages/ProductDetails";
 import AuthProvider from "./Context/AuthContext";
+import { CartProvider } from "./Context/cartContext";
 
 
 
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="app">
       <AuthProvider>
+      <CartProvider/>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,6 +23,7 @@ function App() {
         <Route path="/products/:id" element={<ProductDetails />} />
       </Routes>
       <Footer/>
+      <CartProvider/>
     </AuthProvider>
     </div>
   );
