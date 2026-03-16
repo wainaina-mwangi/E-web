@@ -1,4 +1,22 @@
 
+@import "tailwindcss";
+
+/* 1. Add the Flowbite plugin */
+@plugin "flowbite/plugin";
+
+/* 2. Tell Tailwind to scan Flowbite React components for classes */
+@source "../node_modules/flowbite-react/dist/esm/**/*.mjs";
+
+
+
+
+
+
+
+
+
+
+
 * {
   margin: 0;
   padding: 0;

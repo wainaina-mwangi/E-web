@@ -1,20 +1,21 @@
-import React from 'react'
+import React from "react";
 import { useCart } from "../Context/cartContext";
 
 function Checkout() {
-  const {}=useCart();
+  const {getCartItemsWithProducts} = useCart();
+  const cartItem = getCartItemsWithProducts();
   return (
-    <div className='page'>
-      <div className='container'>
-     <h1 className='page-title'>checkout</h1>
-     <div className='checkout-container'>
-      <div className='checkout-items'>
-        <h1>order summary</h1>
-      </div>
-     </div>
+    <div className="page">
+      <div className="container">
+        <h1 className="page-title">checkout</h1>
+        <div className="checkout-container">
+          <div className="checkout-items">
+            <h1>order summary</h1>
+          </div>
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Checkout
+export default Checkout;
