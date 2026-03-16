@@ -48,7 +48,7 @@
 }
 
 .footer-logo span {
-  color: var(--primary);
+  color: var(--border-color);
 }
 
 .footer-brand-section p {
@@ -69,7 +69,7 @@
 }
 
 .social-links a:hover {
-  color: var(--primary);
+  color: var(--border-color);
   transform: translateY(-5px);
 }
 
