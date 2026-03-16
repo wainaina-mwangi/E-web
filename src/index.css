@@ -35,7 +35,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e6ce8e;
+  background-color: #f8c949;
   color: #333;
   line-height: 1.6;
 }
@@ -136,12 +136,12 @@ body {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: var(--primary-color);
+  background-color: greenyellow;
   transition: width 0.3s ease;
 }
 
 .navbar-link:hover {
-  color: var(--primary-color);
+  color: greenyellow;
 }
 
 .navbar-link:hover::after {
@@ -218,8 +218,8 @@ body {
 }
 
 .home-subtitle {
-  font-size: 1.25rem;
-  color: #666;
+  font-size: 1.3rem;
+  color: #ffffff;
   margin-bottom: 2rem;
 }
 
