@@ -1,9 +1,14 @@
 import React from 'react';
 import './AppFooter.css';
 import { BsFacebook, BsTwitter, BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs';
+import { Alert } from 'flowbite-react';
 
 function AppFooter() {
   const currentYear = new Date().getFullYear();
+  const handleClick =(event)=>{
+    event.preventDefault();
+    alert('You Have successfully subscribed to our Newletter');
+  }
 
   return (
     <footer className="custom-footer">
@@ -44,7 +49,7 @@ function AppFooter() {
             <p>Subscribe for exclusive drops and news.</p>
             <form className="newsletter-form">
               <input type="email" placeholder="Email address" required />
-              <button type="submit">Join</button>
+              <button type="submit" onClick={handleClick}>Join</button>
             </form>
           </div>
         </div>
