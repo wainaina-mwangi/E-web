@@ -1,33 +1,52 @@
-import React,{useState} from 'react';
-import './AppFooter.css';
-import { BsFacebook, BsTwitter, BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs';
-import { Alert } from 'flowbite-react';
+import React, { useState } from "react";
+import "./AppFooter.css";
+import {
+  BsFacebook,
+  BsTwitter,
+  BsInstagram,
+  BsGithub,
+  BsLinkedin,
+} from "react-icons/bs";
+import { Alert } from "flowbite-react";
 
 function AppFooter() {
-  const[email,setEmail]=useState('')
+  const [email, setEmail] = useState("");
   const currentYear = new Date().getFullYear();
-  const handleClick =(event)=>{
-    if (email.trim() === '') {
-      alert('Please enter a valid email address.');
-      return; 
+  const handleClick = (event) => {
+    if (email.trim() === "") {
+      alert("Please enter a valid email address.");
+      return;
     }
     event.preventDefault();
-    alert('You Have successfully subscribed to our Newletter');
-    setEmail('');
-  }
+    alert("You Have successfully subscribed to our Newletter");
+    setEmail("");
+  };
 
   return (
     <footer className="custom-footer">
       <div className="footer-container">
         <div className="footer-top">
           <div className="footer-brand-section">
-            <h2 className="footer-logo">ShopNow<span>.</span></h2>
-            <p>Bringing the best products to your doorstep with style and quality.</p>
+            <h2 className="footer-logo">
+              ShopNow<span>.</span>
+            </h2>
+            <p>
+              Bringing the best products to your doorstep with style and
+              quality.
+            </p>
             <div className="social-links">
-              <a href="#" aria-label="Facebook"><BsFacebook /></a>
-              <a href="#" aria-label="Instagram"><BsInstagram /></a>
-              <a href="#" aria-label="Twitter"><BsTwitter /></a>
-              <a href="#" aria-label="Github"><BsGithub /></a>
+              <a href="#" aria-label="Facebook">
+                <BsFacebook />
+              </a>
+              <a href="#" aria-label="Instagram">
+                <BsInstagram />
+              </a>
+              <a href="#" aria-label="Twitter">
+                <BsTwitter />
+              </a>
+              <a href="#" aria-label="Github">
+                <BsGithub />
+              </a>
             </div>
           </div>
 
@@ -35,17 +54,29 @@ function AppFooter() {
             <div className="link-group">
               <h3>Shop</h3>
               <ul>
-                <li><a href="#">New Arrivals</a></li>
-                <li><a href="#">Best Sellers</a></li>
-                <li><a href="#">Offers</a></li>
+                <li>
+                  <a href="#">New Arrivals</a>
+                </li>
+                <li>
+                  <a href="#">Best Sellers</a>
+                </li>
+                <li>
+                  <a href="#">Offers</a>
+                </li>
               </ul>
             </div>
             <div className="link-group">
               <h3>Company</h3>
               <ul>
-                <li><a href="#">Our Story</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Contact</a></li>
+                <li>
+                  <a href="#">Our Story</a>
+                </li>
+                <li>
+                  <a href="#">Careers</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -54,7 +85,12 @@ function AppFooter() {
             <h3>Stay Updated</h3>
             <p>Subscribe for exclusive drops and news.</p>
             <form className="newsletter-form" onClick={handleClick}>
-              <input type="email" placeholder="Email address" onChange={(e)=>setEmail(e.target.value)} required />
+              <input
+                type="email"
+                placeholder="Email address"
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
               <button type="submit">Join</button>
             </form>
           </div>

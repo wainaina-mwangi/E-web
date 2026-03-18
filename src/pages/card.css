@@ -1,0 +1,65 @@
+.cart-summary-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f0f0;
+  max-width: fit-content;
+  margin-left: auto; 
+}
+
+.price-info {
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  display: block;
+  color: #a0a0a0;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.amount {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.modern-checkout-btn {
+  width: 100%;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 1.2rem;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modern-checkout-btn:hover {
+  background: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.modern-checkout-btn:active {
+  transform: scale(0.97);
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.modern-checkout-btn:hover .arrow-icon {
+  transform: translateX(5px);
+}
