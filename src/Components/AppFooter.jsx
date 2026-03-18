@@ -1,13 +1,19 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './AppFooter.css';
 import { BsFacebook, BsTwitter, BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs';
 import { Alert } from 'flowbite-react';
 
 function AppFooter() {
+  const[email,setEmail]=useState('')
   const currentYear = new Date().getFullYear();
   const handleClick =(event)=>{
+    if (email.trim() === '') {
+      alert('Please enter a valid email address.');
+      return; 
+    }
     event.preventDefault();
     alert('You Have successfully subscribed to our Newletter');
+    setEmail('');
   }
 
   return (
@@ -47,9 +53,9 @@ function AppFooter() {
           <div className="footer-newsletter">
             <h3>Stay Updated</h3>
             <p>Subscribe for exclusive drops and news.</p>
-            <form className="newsletter-form">
-              <input type="email" placeholder="Email address" required />
-              <button type="submit" onClick={handleClick}>Join</button>
+            <form className="newsletter-form" onClick={handleClick}>
+              <input type="email" placeholder="Email address" onChange={(e)=>setEmail(e.target.value)} required />
+              <button type="submit">Join</button>
             </form>
           </div>
         </div>
